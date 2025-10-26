@@ -1,0 +1,55 @@
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7e22ce;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a855f7;
+}
+
+/* Animation for progress log entries */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.progress-entry {
+    animation: fadeIn 0.3s ease-out;
+    border-left: 2px solid #a855f7;
+    padding-left: 8px;
+    margin-bottom: 4px;
+}
+
+/* Glow effect for important elements */
+.glow {
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+}
+
+.glow-text {
+    text-shadow: 0 0 8px rgba(168, 85, 247, 0.7);
+}
+
+/* Pulse animation for loading */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Transition effects */
+.smooth-transition {
+    transition: all 0.3s ease;
+}
